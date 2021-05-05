@@ -15,13 +15,14 @@ if [[ -z $2 ]]; then
 fi
 
 # these may be set in agent.properties or here to match your environment
-export TAKIPI_COLLECTOR_HOST="172.17.0.1"                            
-export TAKIPI_COLLECTOR_PORT="6060"                                             
-export TAKIPI_APPLICATION_NAME="overops_watcher"                                
-export TAKIPI_DEPLOYMENT_NAME="overops_watcher"                                            
-export JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/  #you'll want to set this to match the java home of your system                                                                                                                                              
+#export TAKIPI_COLLECTOR_HOST="172.17.0.1"                            
+#export TAKIPI_COLLECTOR_PORT="6060"                                                                        
+#export JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk/  #you'll want to set this to match the java home of your system                                                                                                                                              
 #export LD_LIBRARY_PATH="/opt/takipi/lib"                                                                                                                                                       
-export TAKIPI_SHUTDOWN_GRACETIME="20000"       
+#export TAKIPI_SHUTDOWN_GRACETIME="20000"       
+
+export TAKIPI_APPLICATION_NAME="overops_watcher"                                
+export TAKIPI_DEPLOYMENT_NAME="overops_watcher_v1"    
 
 #echo installing the OverOps agent  -- commented out here; see OverOps documentation on how to install the agent
 #mkdir -p /opt
