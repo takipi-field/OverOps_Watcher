@@ -4,6 +4,8 @@ Script to monitor overops via an end-to-end test of submitting an application ex
 
 This script will health check OverOps with an end-to-end synthetic transaction type of test.  This script basically builds a simple java app to throw exceptions and then checks via the api to ensure the exception count has increased for this app. It assumes the OverOps agent has been already installed locally. It also assumes the jq command is available for parsing JSON results.  Note, that you might have to change the hostnames and/or ports given to the curl commands if using the on-premise version of OverOps as opposed to the SaaS example here.  Also, app routing needs to be enabled for the VIEWID to populate correctly (you won't have a view under the "Apps" category showing up in your GUI otherwise for OverOpsWatcher).
 
+Further review some of the commented out lines for enviroment variable configuration (i.e. JAVA_HOME, COLLECTOR_HOST, etc) should they need to be tweaked on your system to run with installed OverOps agent. 
+
 This script should be compatible for Nagios/Zenoss as a plugin or at least not too hard to convert to work in those frameworks.
 
 # Usage
