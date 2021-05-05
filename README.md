@@ -24,7 +24,9 @@ OK: OverOps health status is OK: hits_before: 188 hits_after: 223 hit_increase: 
 bash-4.4# ./overops_watcher.bash S41149 YOUR_SECRET_API_KEY_GOES_HERE
 
 OK: OverOps health status is OK: hits_before: 223 hits_after: 258 hit_increase: 35
+
 bash-4.4# ./overops_watcher.bash S41149 YOUR_SECRET_API_KEY_GOES_HERE
+
 OK: OverOps health status is OK: hits_before: 258 hits_after: 293 hit_increase: 35
 
 # Example failure output:
