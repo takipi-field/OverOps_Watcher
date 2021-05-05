@@ -50,7 +50,7 @@ fi
 
 D=$(date '+%Y-%m-%d')
 FROM="${D}T00:00:00.000Z" 
-TO="${D}T23:00:00.000Z"
+TO="${D}T23:59:59.000Z"
 AUTH_HEADER="x-api-key:$APIKEY"
 
 
