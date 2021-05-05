@@ -16,7 +16,9 @@ This script will health check OverOps with an end-to-end/transactional/synthetic
 bash-4.4# ./overops_watcher.bash S41149 YOUR_SECRET_API_KEY_GOES_HERE
 
 Writing the source code to a .java file to build the test app
+
 Compiling the source code to build the test app
+
 OK: OverOps health status is OK: hits_before: 188 hits_after: 223 hit_increase: 35
 
 # Example output after the 1st run:
