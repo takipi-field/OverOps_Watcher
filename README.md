@@ -1,11 +1,10 @@
 # OverOps_Watcher
 
-Script to monitor overops via an end-to-end test of submitting an application exception and ensuring the increase in hit count for that test application via the API 
-
-This script should be compatible for Nagios/Zenoss as a plugin or at least not too hard to convert to work in those frameworks.
+Script to monitor overops via an end-to-end test of submitting an application exception and ensuring the increase in hit count for that test application via the API. 
 
 This script will health check OverOps with an end-to-end/transactional/synthetic type of test.  This script basically builds a simple java app to throw exceptions and then checks via the api to ensure the exception count has increased for this app. It assumes the OverOps agent has been already installed locally. It also assumes the jq command is available for parsing JSON results.  Note, that you might have to change the hostnames and/or ports given to the curl commands if using the on-premise version of OverOps as opposed to the SaaS example here.
 
+This script should be compatible for Nagios/Zenoss as a plugin or at least not too hard to convert to work in those frameworks.
 
 # Usage
    ./overops_watcher.bash environment_id api_key
