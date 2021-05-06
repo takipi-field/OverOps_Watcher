@@ -22,7 +22,7 @@ fi
 #export TAKIPI_SHUTDOWN_GRACETIME="20000"       
 
 export TAKIPI_APPLICATION_NAME="overops_watcher"                                
-export TAKIPI_DEPLOYMENT_NAME="overops_watcher_v1"    
+export TAKIPI_DEPLOYMENT_NAME="overops_watcher"    
 
 #echo installing the OverOps agent  -- commented out here; see OverOps documentation on how to install the agent
 #mkdir -p /opt
