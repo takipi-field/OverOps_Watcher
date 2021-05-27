@@ -22,7 +22,7 @@ Compiling the source code to build the test app
 
 OK: OverOps health status is OK: hits_before: 188 hits_after: 223 hit_increase: 35
 
-# Example output after the 1st run:
+## Example output after the 1st run:
 
 bash-4.4# ./overops_watcher.bash S41149 YOUR_SECRET_API_KEY_GOES_HERE
 
@@ -32,11 +32,15 @@ bash-4.4# ./overops_watcher.bash S41149 YOUR_SECRET_API_KEY_GOES_HERE
 
 OK: OverOps health status is OK: hits_before: 258 hits_after: 293 hit_increase: 35
 
-# Example failure output:
+## Example failure output:
 
 bash-4.4# ./overops_watcher.bash S41149 YOUR_SECRET_API_KEY_GOES_HERE
 
 CRITICAL: OverOps health issue: event count failed to increase for monitor script: hits_before: 293 hits_after: 293 hit_increase: 0
 
 
+
+# Return Status
+
+You can check the return code (i.e. check the value of $? in bash) after having run the script. A value of 0 would indicate success.  A non-zero value should lead to some sort of alert that you might wish to further script to generate.    
 
